@@ -1,0 +1,173 @@
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%
+}
+
+section.badges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+section.badges h1.badges-heading {
+    font-family: "Inter", sans-serif;
+    color: #04a2fd;
+}
+
+section.badges section.rectangular-badges {
+    display: flex;
+    gap: 20px;
+}
+
+section.badges section.pill-badges {
+    display: flex;
+    gap: 20px;
+}
+
+div.default-badge {
+    background-color: #cccccc;
+
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 500;
+    color: #000000;
+    font-family: "Inter", sans-serif;
+}
+
+/* Rectangular badges */
+div.gray-rectangle-badge {
+    background-color: #F3F4F6;
+    color: #1F2937;
+}
+
+div.red-rectangle-badge {
+    background-color: #FEE2E2;
+    color: #991B1B;
+}
+
+div.yellow-rectangle-badge {
+    background-color: #FEF3C7;
+    color: #92400E;
+}
+
+div.green-rectangle-badge {
+    background-color: #D1FAE5;
+    color: #065F46;
+}
+
+div.blue-rectangle-badge {
+    background-color: #DBEAFE;
+    color: #1E40AF;
+}
+
+div.indigo-rectangle-badge {
+    background-color: #E0E7FF;
+    color: #3730A3;
+}
+
+div.purple-rectangle-badge {
+    background-color: #EDE9FE;
+    color: #5B21B6;
+}
+
+div.pink-rectangle-badge {
+    background-color: #FCE7F3;
+    color: #9D174D;
+}
+
+/* Pill badges */
+div.gray-pill-badge {
+    background-color: #F3F4F6;
+    color: #1F2937;
+    border-radius: 20px;
+}
+
+div.red-pill-badge {
+    background-color: #FEE2E2;
+    color: #991B1B;
+    border-radius: 20px;
+}
+
+div.yellow-pill-badge {
+    background-color: #FEF3C7;
+    color: #92400E;
+    border-radius: 20px;
+}
+
+div.green-pill-badge {
+    background-color: #D1FAE5;
+    color: #065F46;
+    border-radius: 20px;
+}
+
+div.blue-pill-badge {
+    background-color: #DBEAFE;
+    color: #1E40AF;
+    border-radius: 20px;
+}
+
+div.indigo-pill-badge {
+    background-color: #E0E7FF;
+    color: #3730A3;
+    border-radius: 20px;
+}
+
+div.purple-pill-badge {
+    background-color: #EDE9FE;
+    color: #5B21B6;
+    border-radius: 20px;
+}
+
+div.pink-pill-badge {
+    background-color: #FCE7F3;
+    color: #9D174D;
+    border-radius: 20px;
+}
+
+section.banners {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+section.banners div.banner {
+    background-color: #cccccc;
+    padding: 10px;
+    margin: 0px auto 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+section.banners h1.banners-heading {
+    margin: 30px auto;
+    font-family: "Inter", sans-serif;
+    color: #04a2fd
+}
+
+section.banners div.banner div.icons-and-title {
+    display: flex;
+    gap: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+section.banners div.banner p {
+    margin: 5px 0px 0px 25px ;
+    font-family: "Inter", sans-serif;
+} 
+
+section.banners section.single-line {
+    width: 39rem;
+}
+
+

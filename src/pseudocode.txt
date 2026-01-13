@@ -1,0 +1,43 @@
+Have all the components displayed in the main.jsx file 
+
+Button Component:
+- Have a Button component
+- return an button element 
+- Modify the style and the display based on the props passed to the button component 
+- For the various displayed designs of "warning", "success", "error", and "neutral", accept variant props (Advanced React - Challenge - Button w/ variants)
+- After assigning all the various classNames, then style them using CSS
+
+
+Banners component
+- Break it down further 
+- create a folder containing all the banners 
+- modify the styling of the banners by passing the style as props 
+    - pass the size, background-colour and font-colour through props 
+    - 
+
+
+Cards 
+- Create the layout 
+- Pass the function responsible for changing the display when it is hovered over 
+- 
+
+Testimonials 
+- Create the layout based on the props passed into the testimonial component 
+
+    For Desktop
+     - pass the configuration and styling through props 
+
+    For Mobile
+     - pass the confuiguration and styling through props 
+
+ 
+Tool tip 
+- Pass the color (ie for the bold and light) through the props
+- pass the color of the icons through props also 
+- use grid to style the layout of the tool tips 
+
+Toast popups 
+- For the icons and the styling (ie color) pass the styles through props#
+- use grid to style the toast popups  
+
+
