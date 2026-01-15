@@ -153,7 +153,7 @@ section.banners h1.banners-heading {
     color: #04a2fd
 }
 
-section.banners div.banner div.icons-and-title {
+section.banners div.banner div.icon-and-title {
     display: flex;
     gap: 10px;
     font-family: "Inter", sans-serif;
@@ -169,5 +169,481 @@ section.banners div.banner p {
 section.banners section.single-line {
     width: 39rem;
 }
+
+section.card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+section.card-section h1 {
+    font-family: "Inter", sans-serif;
+    color: #04a2fd;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px auto 20px;
+}
+
+section.card-container {
+    width: 400px;
+    height: auto;
+    background-color: #F9FAFB;
+    border-radius: 10px;
+    padding: 20px 30px;
+    text-align: center;
+    margin: 40px auto 10px;
+}
+
+section.card-container:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+section.card-container div.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+section.card-container h1.card-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #111827
+}
+
+section.card-container .upload-icon {
+    width: auto;
+    height: auto;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #3F75FE;
+    color: #FFFFFF;
+    position: absolute;
+
+    top: -45px;
+}
+
+section.card-container .upload-icon:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+section.card-container p.card-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #6B7280;
+    margin: 0px auto 40px;
+}
+
+
+/* 
+    - target the containers for all of them 
+    - style the images and the text to fit 
+    - style the images and text accordingly 
+    - 
+ */
+
+/*
+    container 
+    image
+    text
+    header
+    footer
+    position all of them correctly
+*/
+
+/* Testimonials section */
+
+/* styling for the testimonial wrapper */
+section.testimonial-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+/* containers for all the cards */
+section.testimonial-section div.picture-desktop {
+    background-color: #2545B8;
+    width: 900px;
+    height: 250px;
+    
+    display: flex;
+    margin: auto;
+    position: relative;
+} 
+
+section.testimonial-section div.picture-mobile {
+    background-color: #2545B8;
+    width: 250px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+section.testimonial-section div.no-picture-desktop {
+    background-color: #F9FAFB;
+    width: 900px;
+    height: 250px;
+    
+    display: flex;
+    margin: auto;
+    gap: 20px;
+}
+
+section.testimonial-section div.no-picture-mobile {
+    background-color: #F9FAFB;
+    width: 400px;
+    height: 600px;
+
+    display: flex;
+    margin: auto;
+}
+
+
+/* Image styling for the two cards */
+
+/* styling for the desktop testimonial card wrapper with picture */
+section.testimonial-section div.picture-desktop-image-wrapper{ 
+    width: 400px;
+    height: 300px;
+    margin: -25px 0px 0px 40px;
+}
+
+/* styling for the desktop testimonial card image with picture */
+section.testimonial-section img.avatar-picture-desktop {
+    object-fit: cover;
+    object-position: 50% 90%;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+/* styling for the mobile testimonial card wrapper with picture */
+section.testimonial-section div.picture-mobile-image-wrapper{ 
+    width: 90%;
+    height: 150px;
+    margin: 0px auto;
+    position: relative;
+}
+
+/* styling for the mobile testimonial card image with picture */
+section.testimonial-section img.avatar-picture-mobile {
+    object-fit: cover;
+    object-position: 60% 35%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    top: -50%;
+
+    border-radius: 0.5rem;
+}
+
+
+
+/* Text styling for the testimonial cards */
+
+/* styling for the desktop with picture testimonial header */
+section.testimonial-section div.quote-icon {
+    color: #5c74ca;
+    font-size: 1.5rem;
+}
+
+/* styling for the desktop testimonial text wrapper with picture */
+section.testimonial-section div.picture-desktop-testimonial-text {
+    margin: auto;
+    padding: 0 1rem;
+}
+
+/* styling for the desktop testimonial paragraph text */
+section.testimonial-section div.picture-desktop-testimonial-text  p.picture-desktop-testimonial-paragraph{ 
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+}
+
+/* styling for the desktop testimonial footer wrapper */ 
+section.testimonial-section div.picture-desktop-footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem; 
+}
+
+/* Styling for the desktop testimonial footer span */
+section.testimonial-section div.picture-desktop-footer-section span {
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 0px;
+}
+
+/* Styling for the desktop testimonial footer p */
+section.testimonial-section div.picture-desktop-footer-section p {
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin: 0px;
+}
+
+/* Styling for the mobile testimonial footer span */
+section.testimonial-section div.picture-mobile-footer-section span {
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 0px;
+}
+
+/* Styling for the mobile testimonial footer p */
+section.testimonial-section div.picture-mobile-footer-section p {
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin: 0px;
+}
+
+/* styling for the mobile testimonial text wrapper with picture */
+section.testimonial-section div.picture-mobile-testimonial-text {
+    margin: -2rem 0 0px;
+    padding: 0 1rem;
+}
+
+/* styling for the mobile testimonial paragraph text */
+section.testimonial-section div.picture-mobile-testimonial-text  p.picture-mobile-testimonial-paragraph{ 
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+}
+
+
+/* styling for the desktop testimonial header */
+section.testimonial-section div.title-and-icon { 
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 1.25rem;
+}
+
+/* styling for the header section in the no picture testimonialas */
+section.testimonial-section div.title-and-icon h1{ 
+    font-family: "Inter", sans-serif;
+    color: #1F2937;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+/* styling for the heading text in the no-picture testimonials*/
+section.testimonial-section div.title-and-icon span{ 
+    font-family: "Inter", sans-serif;
+    color: #2E59F3;
+}
+
+/* styling for the desktop testimonial text wrapper with no picture */
+section.testimonial-section div.no-picture-desktop-testimonial-text {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* styling for the desktop testimonial paragraph text without picture*/
+section.testimonial-section div.no-picture-desktop-testimonial-text  p.no-picture-desktop-testimonial-paragraph{ 
+    color: #111827;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+
+/* styling for the text wrapper for the desktop footer without picture */
+section.testimonial-section div.no-picture-desktop-footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* styling for the mobile testimonial text wrapper with no picture */
+section.testimonial-section div.no-picture-mobile-testimonial-text {
+    padding: 0.5rem 1rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* styling for the text wrapper for the desktop footer without picture */
+section.testimonial-section div.no-picture-mobile-footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+
+/* styling for the slash icon for the desktop footer without picture */
+section.testimonial-section div.no-picture-desktop-footer-section div.slash-icon {
+    font-weight: 700;
+    color: #2E59F3;
+    font-size: 1rem;
+    /* margin: 0px 5px 5px 0px; */
+}
+
+/* styling for the span text for the desktop footer without picture */
+section.testimonial-section div.no-picture-desktop-footer-section span {
+    font-family: "Inter", sans-serif;
+    color: #111827;
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 0px;
+    margin-right: 5px;
+}
+
+/* styling for the p text for the desktop footer without picture */
+section.testimonial-section div.no-picture-desktop-footer-section p {
+    font-family: "Inter", sans-serif;
+    color: #6B7280;
+    font-weight: 500;
+    font-size: 0.75rem;
+    margin: 0px;
+    margin-left: 5px;
+}
+
+/* styling for the mobile testimonial paragraph text without picture*/
+section.testimonial-section div.no-picture-mobile-testimonial-text  p.no-picture-mobile-testimonial-paragraph{ 
+    color: #111827;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+}
+
+
+/* styling for the span text for the mobile footer without picture */
+section.testimonial-section div.no-picture-mobile-footer-section span{
+    font-family: "Inter", sans-serif;
+    color: #111827;
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin: 0px;
+}
+
+
+/* styling for the p text for the mobile footer without picture */
+section.testimonial-section div.no-picture-mobile-footer-section p{
+    font-family: "Inter", sans-serif;
+    color: #6B7280;
+    font-weight: 500;
+    font-size: 0.75rem;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

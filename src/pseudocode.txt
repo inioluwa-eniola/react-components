@@ -41,3 +41,39 @@ Toast popups
 - use grid to style the toast popups  
 
 
+
+
+Refactoring of the code to implement content taught in course and to be more scalable 
+
+What to implement:
+    - Children
+    - Compound components 
+    - Context
+    - Composition
+    - Render props 
+    - Custom hooks 
+
+
+Children:
+    - 
+
+
+
+Plan 
+1. Having written the logic for conditional rendering, create the styles for the various designs
+    - write the CSS, provide screenshots to chatGPT and let it critique whether your styling was effective 
+
+2. Move to the tooltip design:
+    - Components: 
+        - Tooltip
+        - TooltipImage - attach the close button to the image since displaying it does not require context
+        - TooltipIcon 
+        - TooltipText
+    - Receive these props:
+        - "color(ie black, blue, purple, green) shade(ie light or dark)"
+    - Create a custom component eventually
+
+3. Move on to the toast design:
+    - Components: 
+        - Toast 
+        - Use a custom component from the beginning
