@@ -58,7 +58,6 @@ Children:
     - 
 
 
-
 Plan 
 1. Having written the logic for conditional rendering, create the styles for the various designs
     - write the CSS, provide screenshots to chatGPT and let it critique whether your styling was effective 

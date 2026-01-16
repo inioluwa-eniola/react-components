@@ -1,7 +1,8 @@
 body {
     box-sizing: border-box;
     width: 100%;
-    height: 100%
+    height: 100%;
+    background-color:#ebeff1; 
 }
 
 section.badges {
@@ -195,7 +196,7 @@ section.card-container {
 }
 
 section.card-container:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 2, 1fr), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 section.card-container div.card {
@@ -233,7 +234,7 @@ section.card-container .upload-icon {
 }
 
 section.card-container .upload-icon:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 2, 1fr), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 section.card-container p.card-text {
@@ -263,11 +264,17 @@ section.card-container p.card-text {
 
 /* Testimonials section */
 
+/* styling for the heading */
+section.testimonial-wrapper h1.heading {
+    font-family: "Inter", sans-serif;
+    color: #04a2fd;
+    margin: 100px auto 0px;
+}
 /* styling for the testimonial wrapper */
 section.testimonial-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 200px;
+    gap: 150px;
 }
 
 /* containers for all the cards */
@@ -292,7 +299,7 @@ section.testimonial-section div.picture-mobile {
 }
 
 section.testimonial-section div.no-picture-desktop {
-    background-color: #F9FAFB;
+    background-color: #FFFFFF;
     width: 900px;
     height: 250px;
     
@@ -302,9 +309,9 @@ section.testimonial-section div.no-picture-desktop {
 }
 
 section.testimonial-section div.no-picture-mobile {
-    background-color: #F9FAFB;
-    width: 400px;
-    height: 600px;
+    background-color: #FFFFFF;
+    width: 250px;
+    height: 300px;
 
     display: flex;
     margin: auto;
@@ -354,7 +361,7 @@ section.testimonial-section img.avatar-picture-mobile {
 
 /* Text styling for the testimonial cards */
 
-/* styling for the desktop with picture testimonial header */
+/* styling for the desktop testimonial header */
 section.testimonial-section div.quote-icon {
     color: #5c74ca;
     font-size: 1.5rem;
@@ -446,18 +453,19 @@ section.testimonial-section div.title-and-icon h1{
     font-family: "Inter", sans-serif;
     color: #1F2937;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 /* styling for the heading text in the no-picture testimonials*/
 section.testimonial-section div.title-and-icon span{ 
     font-family: "Inter", sans-serif;
-    color: #2E59F3;
+    color: #2E59F3
 }
 
 /* styling for the desktop testimonial text wrapper with no picture */
 section.testimonial-section div.no-picture-desktop-testimonial-text {
-    padding: 2rem 0;
+    margin: 2rem 0;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -486,10 +494,9 @@ section.testimonial-section div.no-picture-desktop-footer-section {
 
 /* styling for the mobile testimonial text wrapper with no picture */
 section.testimonial-section div.no-picture-mobile-testimonial-text {
-    padding: 0.5rem 1rem; 
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    gap: 0.5rem;
 }
 
 
@@ -535,9 +542,8 @@ section.testimonial-section div.no-picture-mobile-testimonial-text  p.no-picture
     color: #111827;
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    text-align: center;
     width: 100%;
-    margin: 0px auto;
+    margin: 10px auto 20px;
 }
 
 
@@ -561,28 +567,469 @@ section.testimonial-section div.no-picture-mobile-footer-section p{
 }
 
 
+/* TOOLTIPS STYLING */
+
+/* styling for the tooltip */
+section.tooltip-section div.tooltip{
+    background-color: #000000;
+    width: 300px;
+    height: 100px;
+}
+
+/* styling for the tooltips */
+section.tooltips-container h1.heading {
+    color:#04a2fd;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin: 50px auto;
+}
+/* styling for the black and white tool tips */
+section.tooltips-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* styling for black tooltip */
+section.tooltip div.black-tooltip {
+    background-color: #262626;
+    width: 400px;
+    height: 100px;
+    color: #C7C7C7;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    padding: 12px 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+section.tooltip div.black-tooltip {
+    display: flex;
+}
+
+section.tooltip div.black-archive {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+section.tooltip button.black-close {
+    align-self: flex-start;
+    border: none;
+    background: none;
+    color: #C7C7C7;
+    font-size: 1.25rem;
+}
+
+section.tooltip div.tooltip-text {
+    align-self: flex-start;
+    margin: -10px 0px 0px 20px;
+}
+
+section.tooltip p.black-title{ 
+    font-weight: 700;
+}
+
+
+/* styling for white tooltip */
+section.tooltip div.white-tooltip {
+    background-color: #ffffff;
+    width: 400px;
+    height: 100px;
+    color: #6B7280;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    padding: 12px 10px;
+    border-radius: 10px;
+}
+
+section.tooltip div.white-tooltip {
+    display: flex;
+}
+
+section.tooltip div.white-archive {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #111827
+}
+
+section.tooltip button.white-close {
+    align-self: flex-start;
+    border: none;
+    background: none;
+    font-size: 1.25rem;
+}
+
+section.tooltip div.tooltip-text {
+    align-self: flex-start;
+    margin: -10px 0px 0px 20px;
+}
+
+section.tooltip p.white-title{ 
+    font-weight: 700;
+    color: #111827
+}
+
+
+section.tooltip p.white-para{ 
+    color: #6B7280
+}
 
 
 
+/* styling for darkblue tooltip */
+section.tooltip div.darkblue-tooltip {
+    background-color: #1E40AF;
+    width: 400px;
+    height: 100px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    padding: 12px 10px;
+    border-radius: 10px;
+}
+
+section.tooltip div.darkblue-tooltip {
+    display: flex;
+}
+
+section.tooltip div.darkblue-archive {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #7EA6F2
+}
+
+section.tooltip button.darkblue-close {
+    align-self: flex-start;
+    border: none;
+    background: none;
+    font-size: 1.25rem;
+    color: #D8D8D8;
+}
+
+section.tooltip div.tooltip-text {
+    align-self: flex-start;
+    margin: -10px 0px 0px 20px;
+    color: #E8EDFF
+}
+
+section.tooltip p.darkblue-title{ 
+    font-weight: 700;
+    color: #FFFFFF;
+}
 
 
 
+/* styling for lightblue tooltip */
+section.tooltip div.lightblue-tooltip {
+    background-color: #E0E7FF;
+    width: 400px;
+    height: 100px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    padding: 12px 10px;
+    border-radius: 10px;
+}
+
+section.tooltip div.lightblue-tooltip {
+    display: flex;
+}
+
+section.tooltip div.lightblue-archive {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #1C51B9
+}
+
+section.tooltip button.lightblue-close {
+    align-self: flex-start;
+    border: none;
+    background: none;
+    font-size: 1.25rem;
+    color: #1C51B9;
+}
+
+section.tooltip div.tooltip-text {
+    align-self: flex-start;
+    margin: -10px 0px 0px 20px;
+}
+
+section.tooltip p.lightblue-title{ 
+    font-weight: 700;
+    color: #1E40AF;
+}
+
+section.tooltip p.lightblue-para{ 
+    color: #1C51B9;
+}
 
 
+/* styling for lightblue tooltip */
+section.tooltip div.lightblue-tooltip {
+    background-color: #E0E7FF;
+    width: 400px;
+    height: 100px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    padding: 12px 10px;
+    border-radius: 10px;
+}
+
+section.tooltip div.lightblue-tooltip {
+    display: flex;
+}
+
+section.tooltip div.lightblue-archive {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #1C51B9
+}
+
+section.tooltip button.lightblue-close {
+    align-self: flex-start;
+    border: none;
+    background: none;
+    font-size: 1.25rem;
+    color: #1C51B9;
+}
+
+section.tooltip div.tooltip-text {
+    align-self: flex-start;
+    margin: -10px 0px 0px 20px;
+}
+
+section.tooltip p.lightblue-title{ 
+    font-weight: 700;
+    color: #1E40AF;
+}
+
+section.tooltip p.lightblue-para{ 
+    color: #1C51B9;
+}
 
 
+/* styling for darkgreen tooltip */
+section.tooltip div.darkpurple-tooltip {
+    background-color: #A9229B;
+    width: 400px;
+    height: 100px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    padding: 12px 10px;
+    border-radius: 10px;
+}
+
+section.tooltip div.darkpurple-tooltip {
+    display: flex;
+}
+
+section.tooltip div.darkpurple-archive {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #F462E6
+}
+
+section.tooltip button.darkpurple-close {
+    align-self: flex-start;
+    border: none;
+    background: none;
+    font-size: 1.25rem;
+    color: #D8D8D8;
+}
+
+section.tooltip div.tooltip-text {
+    align-self: flex-start;
+    margin: -10px 0px 0px 20px;
+}
+
+section.tooltip p.darkpurple-title{ 
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+section.tooltip p.darkpurple-para{ 
+    color: #FFE9FD;
+}
 
 
+/* styling for lightpurple tooltip */
+section.tooltip div.lightpurple-tooltip {
+    background-color: #FFF3FC;
+    width: 400px;
+    height: 100px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    padding: 12px 10px;
+    border-radius: 10px;
+}
+
+section.tooltip div.lightpurple-tooltip {
+    display: flex;
+}
+
+section.tooltip div.lightpurple-archive {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #C7369E;
+}
+
+section.tooltip button.lightpurple-close {
+    align-self: flex-start;
+    border: none;
+    background: none;
+    font-size: 1.25rem;
+    color: #C7369E;
+}
+
+section.tooltip div.tooltip-text {
+    align-self: flex-start;
+    margin: -10px 0px 0px 20px;
+}
+
+section.tooltip p.lightpurple-title{ 
+    font-weight: 700;
+    color: #A9229B;
+}
+
+section.tooltip p.lightpurple-para{ 
+    color: #C7369E;
+}
 
 
+/* styling for darkgreen tooltip */
+section.tooltip div.darkgreen-tooltip {
+    background-color: #47AA5D;
+    width: 400px;
+    height: 100px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    padding: 12px 10px;
+    border-radius: 10px;
+}
+
+section.tooltip div.darkgreen-tooltip {
+    display: flex;
+}
+
+section.tooltip div.darkgreen-archive {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #C1FFCF;
+}
+
+section.tooltip button.darkgreen-close {
+    align-self: flex-start;
+    border: none;
+    background: none;
+    font-size: 1.25rem;
+    color: #D8D8D8;
+}
+
+section.tooltip div.tooltip-text {
+    align-self: flex-start;
+    margin: -10px 0px 0px 20px;
+}
+
+section.tooltip p.darkgreen-title{ 
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+section.tooltip p.darkgreen-para{ 
+    color: #E3FFE9;
+}
 
 
+/* styling for lightgreen tooltip */
+section.tooltip div.lightgreen-tooltip {
+    background-color: #E7FFF3;
+    width: 400px;
+    height: 100px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    padding: 12px 10px;
+    border-radius: 10px;
+}
+
+section.tooltip div.lightgreen-tooltip {
+    display: flex;
+}
+
+section.tooltip div.lightgreen-archive {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #41A557;
+}
+
+section.tooltip button.lightgreen-close {
+    align-self: flex-start;
+    border: none;
+    background: none;
+    font-size: 1.25rem;
+    color: #3C8C4E;
+}
+
+section.tooltip div.tooltip-text {
+    align-self: flex-start;
+    margin: -10px 0px 0px 20px;
+}
+
+section.tooltip p.lightgreen-title{ 
+    font-weight: 700;
+    color: #137A2A;
+}
+
+section.tooltip p.lightgreen-para{ 
+    color: #3C8C4E;
+}
+
+/* Styling for the toast components */
+section.toast-container h1 {
+    font-family: "Inter", sans-serif;
+    color: #04a2fd;
+    text-align: center;
+    margin: 100px auto 50px;
+}
+
+section.toast {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    margin: 0px auto 100px;
+    gap: 20px;
+}
 
 
+section.toast div.toast {
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+}
 
+section.toast div.icon {
+    padding: 15px;
+    font-size: 1.5rem;
+}
 
+section.toast p.title {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
 
-
+section.toast p.paragraph {
+    font-family: "Inter", sans-serif;
+    margin-top: -10px;
+}
 
 
 
